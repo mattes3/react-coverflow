@@ -1,4 +1,8 @@
-React Coverflow
+React Coverflow (cold)
+
+This is a clone of react-coverflow with React hot loading removed from the source. This is made for people
+(i.e. me) who have trouble with another hot loader in their webpack environment.
+
 ===
 [![npm version](https://badge.fury.io/js/react-coverflow.svg)](http://badge.fury.io/js/react-coverflow)
 
@@ -20,10 +24,10 @@ Features of `react-coverflow`
 
 ## Getting started
 
-Install `react-coverflow` using npm.
+Install `react-coverflow-cold` using npm.
 
 ```
-$ npm install react-coverflow
+$ npm install react-coverflow-cold
 ```
 
 The required stylesheet using `css-module` and include in package(js file), so you don't need include other stylesheet.
@@ -33,7 +37,7 @@ The required stylesheet using `css-module` and include in package(js file), so y
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Coverflow from 'react-coverflow';
+import Coverflow from 'react-coverflow-cold';
 
 const fn = function () {
   /* do your action */

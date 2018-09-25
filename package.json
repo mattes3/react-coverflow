@@ -1,7 +1,7 @@
 {
-  "name": "react-coverflow",
+  "name": "react-coverflow-cold",
   "version": "0.2.15",
-  "description": "Carousel of coverflow effect",
+  "description": "Carousel of coverflow effect (without react-hot-load)",
   "main": "main.js",
   "scripts": {
     "test": "make test",
@@ -13,6 +13,7 @@
     "build-site": "rm -rf site/js/*.bundle.js && webpack --config site/webpack.config.js",
     "dev": "rm -rf site/js/*.bundle.js && NODE_ENV=react-hot webpack-dev-server --config site/webpack.config.js --progress --colors --inline --hot --port 3000 --host 0.0.0.0 --content-base site"
   },
+  "typings": "index.d.ts",
   "postcss": {
     "parser": "sugarss",
     "map": false,
@@ -72,7 +73,6 @@
     "postcss-load-config": "^2.0.0",
     "postcss-loader": "^3.0.0",
     "precss": "^3.1.2",
-    "react-hot-loader": "^4.3.11",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.23.0",
     "uglifyjs-webpack-plugin": "^2.0.1",

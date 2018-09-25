@@ -8,7 +8,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import Radium, { StyleRoot } from "radium";
-import { hot } from "react-hot-loader";
 import styles from "./stylesheets/coverflow.scss";
 
 const TOUCH = {
@@ -422,5 +421,4 @@ class Coverflow extends Component {
 
 Coverflow.displayName = "Coverflow";
 
-const HotCoverflow = hot(module)(Coverflow);
-export default Radium(HotCoverflow);
+export default Radium(Coverflow);
